@@ -1,4 +1,3 @@
-#Function to generate the bill
 def bill():
     #Creating a window
     wn = tkinter.Tk() 
@@ -23,7 +22,7 @@ def bill():
     dt=date.get()
     cName=custName.get()
     totalBill=0
-    #Connecting to database
+   
     db=mysql.connector.connect(user="root",passwd="root",host="localhost",database='Shop') 
     cursor=db.cursor()
     #query to select all the products 
